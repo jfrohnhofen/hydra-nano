@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="49.38mm" height="49.38mm" viewBox="0 0 139.975 139.975">
+  <title>hydra nano label</title>
+  <g id="print" font-family="Roboto, sans-serif">
+    <path id="bg" d="M8.504 0 L131.471 0 C136.167 0 139.975 3.807 139.975 8.504 L139.975 131.471 C139.975 136.167 136.167 139.975 131.471 139.975 L8.504 139.975 C3.807 139.975 0 136.167 0 131.471 L0 8.504 C0 3.807 3.807 0 8.504 0 Z M100.998 85.656 C100.998 89.57 104.171 92.743 108.085 92.743 C111.999 92.743 115.172 89.57 115.172 85.656 C115.172 81.742 111.999 78.569 108.085 78.569 C104.171 78.569 100.998 81.742 100.998 85.656 Z" fill="#ffffff" fill-rule="evenodd"/>
+    <path d="M8.504 1.134 L131.471 1.134 C135.541 1.134 138.841 4.434 138.841 8.504 L138.841 131.471 C138.841 135.541 135.541 138.841 131.471 138.841 L8.504 138.841 C4.434 138.841 1.134 135.541 1.134 131.471 L1.134 8.504 C1.134 4.434 4.434 1.134 8.504 1.134 Z" fill="none" stroke="#000000" stroke-width="0.567"/>
+    <g id="logo" transform="translate(3.2 0)">
+      <path d="M44.504 26.391 L44.504 21.798 M44.504 21.798 C44.504 18.737 39.912 19.247 39.912 15.165 M44.504 21.798 L44.504 15.165 M44.504 21.798 C44.504 18.737 49.096 19.247 49.096 15.165" fill="none" stroke="#000000" stroke-width="1.327" stroke-linecap="round"/>
+      <g>
+        <circle cx="39.912" cy="14.4" r="1.531" fill="#000000"/>
+        <circle cx="44.504" cy="14.4" r="1.531" fill="#000000"/>
+        <circle cx="49.096" cy="14.4" r="1.531" fill="#000000"/>
+      </g>
+    </g>
+    <text id="wordmark" x="78.066" y="23.924" font-size="11.622" font-weight="300" fill="#000000" letter-spacing="-0.283" text-anchor="middle">hyd<tspan font-weight="500">r</tspan><tspan font-weight="500" letter-spacing="1.984" style="font-kerning:none">a</tspan><tspan font-size="5.102" letter-spacing="0.255" dx="1.4">NANO</tspan></text>
+    <text id="version" x="134.853" y="9.522" font-size="5.102" font-weight="300" fill="#000000" text-anchor="end">v0.1</text>
+    <rect id="info-box" x="13.004" y="38.224" width="113.967" height="32.088" rx="3.402" fill="none" stroke="#000000" stroke-width="0.567"/>
+    <g font-size="5.386" font-weight="800" letter-spacing="0.255" fill="#000000">
+      <text x="18.106" y="47.153">HOST</text>
+      <text x="18.106" y="56.167">IP</text>
+      <text x="18.106" y="65.209">MAC</text>
+    </g>
+    <g font-family="'DejaVu Sans Mono', monospace" font-size="5.386" font-weight="bold" fill="#000000">
+      <text id="host" x="48.72" y="47.153">hydra.local</text>
+      <text id="ip" x="48.72" y="56.167">192.168.1.123</text>
+      <text id="mac" x="48.72" y="65.209">aa:bb:cc:dd:ee:ff</text>
+    </g>
+    <circle id="bootsel-ring" cx="108.085" cy="85.656" r="8.504" fill="none" stroke="#000000" stroke-width="0.567"/>
+    <polygon points="97.313,85.656 94.195,83.388 94.195,87.924" fill="#000000"/>
+    <text x="92.494" y="87.364" font-size="4.989" font-weight="bold" fill="#000000" letter-spacing="0.255" text-anchor="end">BOOTSEL</text>
+    <polygon points="8.504,106.98 20.268,106.98 20.268,108.255 28.772,108.255 28.772,106.98 40.535,106.98 40.535,122.003 8.504,122.003" fill="none" stroke="#000000" stroke-width="0.709" stroke-linejoin="round"/>
+    <polygon points="36.992,110.466 39.118,108.907 39.118,112.025" fill="#000000"/>
+    <rect x="15.024" y="109.049" width="2.834" height="2.834" fill="#ffffff" stroke="#000000" stroke-width="0.454"/>
+    <rect x="15.024" y="117.128" width="2.834" height="2.834" fill="#cfcfcf" stroke="#000000" stroke-width="0.454"/>
+    <path d="M14.457 96.917 L18.425 96.917 C19.365 96.917 20.126 97.678 20.126 98.617 L20.126 104.57 C20.126 105.509 19.365 106.271 18.425 106.271 L14.457 106.271 C13.517 106.271 12.756 105.509 12.756 104.57 L12.756 98.617 C12.756 97.678 13.517 96.917 14.457 96.917 Z" fill="#ffffff" stroke="#000000" stroke-width="0.454"/>
+    <text transform="translate(17.858 101.594) rotate(-90)" font-size="4.11" font-weight="bold" fill="#000000" text-anchor="middle">GND</text>
+    <path d="M14.457 122.712 L18.425 122.712 C19.365 122.712 20.126 123.473 20.126 124.413 L20.126 130.365 C20.126 131.305 19.365 132.066 18.425 132.066 L14.457 132.066 C13.517 132.066 12.756 131.305 12.756 130.365 L12.756 124.413 C12.756 123.473 13.517 122.712 14.457 122.712 Z" fill="#cfcfcf" stroke="#000000" stroke-width="0.454"/>
+    <text transform="translate(17.858 127.389) rotate(-90)" font-size="4.11" font-weight="bold" fill="#000000" text-anchor="middle">5V</text>
+    <rect x="23.102" y="109.049" width="2.835" height="2.834" fill="#cfcfcf" stroke="#000000" stroke-width="0.454"/>
+    <rect x="23.102" y="117.128" width="2.835" height="2.834" fill="#000000" stroke="#000000" stroke-width="0.454"/>
+    <path d="M22.535 96.917 L26.504 96.917 C27.443 96.917 28.205 97.678 28.205 98.617 L28.205 104.57 C28.205 105.509 27.443 106.271 26.504 106.271 L22.535 106.271 C21.596 106.271 20.835 105.509 20.835 104.57 L20.835 98.617 C20.835 97.678 21.596 96.917 22.535 96.917 Z" fill="#cfcfcf" stroke="#000000" stroke-width="0.454"/>
+    <text transform="translate(25.937 101.594) rotate(-90)" font-size="4.11" font-weight="bold" fill="#000000" text-anchor="middle">5V</text>
+    <path d="M22.535 122.712 L26.504 122.712 C27.443 122.712 28.205 123.473 28.205 124.413 L28.205 130.365 C28.205 131.305 27.443 132.066 26.504 132.066 L22.535 132.066 C21.596 132.066 20.835 131.305 20.835 130.365 L20.835 124.413 C20.835 123.473 21.596 122.712 22.535 122.712 Z" fill="#000000" stroke="#000000" stroke-width="0.454"/>
+    <text transform="translate(25.937 127.389) rotate(-90)" font-size="4.11" font-weight="bold" fill="#ffffff" text-anchor="middle">CH1</text>
+    <rect x="31.181" y="109.049" width="2.835" height="2.834" fill="#000000" stroke="#000000" stroke-width="0.454"/>
+    <rect x="31.181" y="117.128" width="2.835" height="2.834" fill="#ffffff" stroke="#000000" stroke-width="0.454"/>
+    <path d="M30.614 96.917 L34.583 96.917 C35.522 96.917 36.283 97.678 36.283 98.617 L36.283 104.57 C36.283 105.509 35.522 106.271 34.583 106.271 L30.614 106.271 C29.675 106.271 28.913 105.509 28.913 104.57 L28.913 98.617 C28.913 97.678 29.675 96.917 30.614 96.917 Z" fill="#000000" stroke="#000000" stroke-width="0.454"/>
+    <text transform="translate(34.016 101.594) rotate(-90)" font-size="4.11" font-weight="bold" fill="#ffffff" text-anchor="middle">CH2</text>
+    <path d="M30.614 122.712 L34.583 122.712 C35.522 122.712 36.283 123.473 36.283 124.413 L36.283 130.365 C36.283 131.305 35.522 132.066 34.583 132.066 L30.614 132.066 C29.675 132.066 28.913 131.305 28.913 130.365 L28.913 124.413 C28.913 123.473 29.675 122.712 30.614 122.712 Z" fill="#ffffff" stroke="#000000" stroke-width="0.454"/>
+    <text transform="translate(34.016 127.389) rotate(-90)" font-size="4.11" font-weight="bold" fill="#000000" text-anchor="middle">GND</text>
+    <polygon points="45.893,106.98 65.735,106.98 65.735,108.255 74.239,108.255 74.239,106.98 94.082,106.98 94.082,122.003 45.893,122.003" fill="none" stroke="#000000" stroke-width="0.709" stroke-linejoin="round"/>
+    <polygon points="90.539,110.466 92.665,108.907 92.665,112.025" fill="#000000"/>
+    <rect x="52.413" y="109.049" width="2.834" height="2.834" fill="#cfcfcf" stroke="#000000" stroke-width="0.454"/>
+    <rect x="52.413" y="117.128" width="2.834" height="2.834" fill="#ffffff" stroke="#000000" stroke-width="0.454"/>
+    <path d="M51.846 96.917 L55.814 96.917 C56.753 96.917 57.515 97.678 57.515 98.617 L57.515 104.57 C57.515 105.509 56.753 106.271 55.814 106.271 L51.846 106.271 C50.906 106.271 50.145 105.509 50.145 104.57 L50.145 98.617 C50.145 97.678 50.906 96.917 51.846 96.917 Z" fill="#cfcfcf" stroke="#000000" stroke-width="0.454"/>
+    <text transform="translate(55.247 101.594) rotate(-90)" font-size="4.11" font-weight="bold" fill="#000000" text-anchor="middle">5V</text>
+    <path d="M51.846 122.712 L55.814 122.712 C56.753 122.712 57.515 123.473 57.515 124.413 L57.515 130.365 C57.515 131.305 56.753 132.066 55.814 132.066 L51.846 132.066 C50.906 132.066 50.145 131.305 50.145 130.365 L50.145 124.413 C50.145 123.473 50.906 122.712 51.846 122.712 Z" fill="#ffffff" stroke="#000000" stroke-width="0.454"/>
+    <text transform="translate(55.247 127.389) rotate(-90)" font-size="4.11" font-weight="bold" fill="#000000" text-anchor="middle">GND</text>
+    <rect x="60.491" y="109.049" width="2.835" height="2.834" fill="#000000" stroke="#000000" stroke-width="0.454"/>
+    <rect x="60.491" y="117.128" width="2.835" height="2.834" fill="#ffffff" stroke="#000000" stroke-width="0.454"/>
+    <path d="M59.924 96.917 L63.893 96.917 C64.832 96.917 65.594 97.678 65.594 98.617 L65.594 104.57 C65.594 105.509 64.832 106.271 63.893 106.271 L59.924 106.271 C58.985 106.271 58.224 105.509 58.224 104.57 L58.224 98.617 C58.224 97.678 58.985 96.917 59.924 96.917 Z" fill="#000000" stroke="#000000" stroke-width="0.454"/>
+    <text transform="translate(63.326 101.594) rotate(-90)" font-size="4.11" font-weight="bold" fill="#ffffff" text-anchor="middle">CH3</text>
+    <path d="M59.924 122.712 L63.893 122.712 C64.832 122.712 65.594 123.473 65.594 124.413 L65.594 130.365 C65.594 131.305 64.832 132.066 63.893 132.066 L59.924 132.066 C58.985 132.066 58.224 131.305 58.224 130.365 L58.224 124.413 C58.224 123.473 58.985 122.712 59.924 122.712 Z" fill="#ffffff" stroke="#000000" stroke-width="0.454"/>
+    <text transform="translate(63.326 127.389) rotate(-90)" font-size="4.11" font-weight="bold" fill="#000000" text-anchor="middle">GND</text>
+    <rect x="68.57" y="109.049" width="2.835" height="2.834" fill="#000000" stroke="#000000" stroke-width="0.454"/>
+    <rect x="68.57" y="117.128" width="2.835" height="2.834" fill="#ffffff" stroke="#000000" stroke-width="0.454"/>
+    <path d="M68.003 96.917 L71.972 96.917 C72.911 96.917 73.672 97.678 73.672 98.617 L73.672 104.57 C73.672 105.509 72.911 106.271 71.972 106.271 L68.003 106.271 C67.064 106.271 66.302 105.509 66.302 104.57 L66.302 98.617 C66.302 97.678 67.064 96.917 68.003 96.917 Z" fill="#000000" stroke="#000000" stroke-width="0.454"/>
+    <text transform="translate(71.405 101.594) rotate(-90)" font-size="4.11" font-weight="bold" fill="#ffffff" text-anchor="middle">CH4</text>
+    <path d="M68.003 122.712 L71.972 122.712 C72.911 122.712 73.672 123.473 73.672 124.413 L73.672 130.365 C73.672 131.305 72.911 132.066 71.972 132.066 L68.003 132.066 C67.064 132.066 66.302 131.305 66.302 130.365 L66.302 124.413 C66.302 123.473 67.064 122.712 68.003 122.712 Z" fill="#ffffff" stroke="#000000" stroke-width="0.454"/>
+    <text transform="translate(71.405 127.389) rotate(-90)" font-size="4.11" font-weight="bold" fill="#000000" text-anchor="middle">GND</text>
+    <rect x="76.649" y="109.049" width="2.834" height="2.834" fill="#000000" stroke="#000000" stroke-width="0.454"/>
+    <rect x="76.649" y="117.128" width="2.834" height="2.834" fill="#ffffff" stroke="#000000" stroke-width="0.454"/>
+    <path d="M76.082 96.917 L80.05 96.917 C80.99 96.917 81.751 97.678 81.751 98.617 L81.751 104.57 C81.751 105.509 80.99 106.271 80.05 106.271 L76.082 106.271 C75.143 106.271 74.381 105.509 74.381 104.57 L74.381 98.617 C74.381 97.678 75.143 96.917 76.082 96.917 Z" fill="#000000" stroke="#000000" stroke-width="0.454"/>
+    <text transform="translate(79.483 101.594) rotate(-90)" font-size="4.11" font-weight="bold" fill="#ffffff" text-anchor="middle">CH5</text>
+    <path d="M76.082 122.712 L80.05 122.712 C80.99 122.712 81.751 123.473 81.751 124.413 L81.751 130.365 C81.751 131.305 80.99 132.066 80.05 132.066 L76.082 132.066 C75.143 132.066 74.381 131.305 74.381 130.365 L74.381 124.413 C74.381 123.473 75.143 122.712 76.082 122.712 Z" fill="#ffffff" stroke="#000000" stroke-width="0.454"/>
+    <text transform="translate(79.483 127.389) rotate(-90)" font-size="4.11" font-weight="bold" fill="#000000" text-anchor="middle">GND</text>
+    <rect x="84.728" y="109.049" width="2.834" height="2.834" fill="#000000" stroke="#000000" stroke-width="0.454"/>
+    <rect x="84.728" y="117.128" width="2.834" height="2.834" fill="#ffffff" stroke="#000000" stroke-width="0.454"/>
+    <path d="M84.161 96.917 L88.129 96.917 C89.068 96.917 89.83 97.678 89.83 98.617 L89.83 104.57 C89.83 105.509 89.068 106.271 88.129 106.271 L84.161 106.271 C83.221 106.271 82.46 105.509 82.46 104.57 L82.46 98.617 C82.46 97.678 83.221 96.917 84.161 96.917 Z" fill="#000000" stroke="#000000" stroke-width="0.454"/>
+    <text transform="translate(87.562 101.594) rotate(-90)" font-size="4.11" font-weight="bold" fill="#ffffff" text-anchor="middle">CH6</text>
+    <path d="M84.161 122.712 L88.129 122.712 C89.068 122.712 89.83 123.473 89.83 124.413 L89.83 130.365 C89.83 131.305 89.068 132.066 88.129 132.066 L84.161 132.066 C83.221 132.066 82.46 131.305 82.46 130.365 L82.46 124.413 C82.46 123.473 83.221 122.712 84.161 122.712 Z" fill="#ffffff" stroke="#000000" stroke-width="0.454"/>
+    <text transform="translate(87.562 127.389) rotate(-90)" font-size="4.11" font-weight="bold" fill="#000000" text-anchor="middle">GND</text>
+    <polygon points="99.439,106.98 111.203,106.98 111.203,108.255 119.707,108.255 119.707,106.98 131.471,106.98 131.471,122.003 99.439,122.003" fill="none" stroke="#000000" stroke-width="0.709" stroke-linejoin="round"/>
+    <polygon points="127.928,110.466 130.054,108.907 130.054,112.025" fill="#000000"/>
+    <rect x="105.959" y="109.049" width="2.835" height="2.834" fill="#ffffff" stroke="#000000" stroke-width="0.454"/>
+    <rect x="105.959" y="117.128" width="2.835" height="2.834" fill="#cfcfcf" stroke="#000000" stroke-width="0.454"/>
+    <path d="M105.392 96.917 L109.361 96.917 C110.3 96.917 111.061 97.678 111.061 98.617 L111.061 104.57 C111.061 105.509 110.3 106.271 109.361 106.271 L105.392 106.271 C104.453 106.271 103.691 105.509 103.691 104.57 L103.691 98.617 C103.691 97.678 104.453 96.917 105.392 96.917 Z" fill="#ffffff" stroke="#000000" stroke-width="0.454"/>
+    <text transform="translate(108.794 101.594) rotate(-90)" font-size="4.11" font-weight="bold" fill="#000000" text-anchor="middle">GND</text>
+    <path d="M105.392 122.712 L109.361 122.712 C110.3 122.712 111.061 123.473 111.061 124.413 L111.061 130.365 C111.061 131.305 110.3 132.066 109.361 132.066 L105.392 132.066 C104.453 132.066 103.691 131.305 103.691 130.365 L103.691 124.413 C103.691 123.473 104.453 122.712 105.392 122.712 Z" fill="#cfcfcf" stroke="#000000" stroke-width="0.454"/>
+    <text transform="translate(108.794 127.389) rotate(-90)" font-size="4.11" font-weight="bold" fill="#000000" text-anchor="middle">5V</text>
+    <rect x="114.038" y="109.049" width="2.834" height="2.834" fill="#cfcfcf" stroke="#000000" stroke-width="0.454"/>
+    <rect x="114.038" y="117.128" width="2.834" height="2.834" fill="#000000" stroke="#000000" stroke-width="0.454"/>
+    <path d="M113.471 96.917 L117.439 96.917 C118.379 96.917 119.14 97.678 119.14 98.617 L119.14 104.57 C119.14 105.509 118.379 106.271 117.439 106.271 L113.471 106.271 C112.532 106.271 111.77 105.509 111.77 104.57 L111.77 98.617 C111.77 97.678 112.532 96.917 113.471 96.917 Z" fill="#cfcfcf" stroke="#000000" stroke-width="0.454"/>
+    <text transform="translate(116.872 101.594) rotate(-90)" font-size="4.11" font-weight="bold" fill="#000000" text-anchor="middle">5V</text>
+    <path d="M113.471 122.712 L117.439 122.712 C118.379 122.712 119.14 123.473 119.14 124.413 L119.14 130.365 C119.14 131.305 118.379 132.066 117.439 132.066 L113.471 132.066 C112.532 132.066 111.77 131.305 111.77 130.365 L111.77 124.413 C111.77 123.473 112.532 122.712 113.471 122.712 Z" fill="#000000" stroke="#000000" stroke-width="0.454"/>
+    <text transform="translate(116.872 127.389) rotate(-90)" font-size="4.11" font-weight="bold" fill="#ffffff" text-anchor="middle">CH7</text>
+    <rect x="122.117" y="109.049" width="2.834" height="2.834" fill="#000000" stroke="#000000" stroke-width="0.454"/>
+    <rect x="122.117" y="117.128" width="2.834" height="2.834" fill="#ffffff" stroke="#000000" stroke-width="0.454"/>
+    <path d="M121.55 96.917 L125.518 96.917 C126.457 96.917 127.219 97.678 127.219 98.617 L127.219 104.57 C127.219 105.509 126.457 106.271 125.518 106.271 L121.55 106.271 C120.61 106.271 119.849 105.509 119.849 104.57 L119.849 98.617 C119.849 97.678 120.61 96.917 121.55 96.917 Z" fill="#000000" stroke="#000000" stroke-width="0.454"/>
+    <text transform="translate(124.951 101.594) rotate(-90)" font-size="4.11" font-weight="bold" fill="#ffffff" text-anchor="middle">CH8</text>
+    <path d="M121.55 122.712 L125.518 122.712 C126.457 122.712 127.219 123.473 127.219 124.413 L127.219 130.365 C127.219 131.305 126.457 132.066 125.518 132.066 L121.55 132.066 C120.61 132.066 119.849 131.305 119.849 130.365 L119.849 124.413 C119.849 123.473 120.61 122.712 121.55 122.712 Z" fill="#ffffff" stroke="#000000" stroke-width="0.454"/>
+    <text transform="translate(124.951 127.389) rotate(-90)" font-size="4.11" font-weight="bold" fill="#000000" text-anchor="middle">GND</text>
+  </g>
+  <g id="cut">
+    <path d="M8.504 0 L131.471 0 C136.167 0 139.975 3.807 139.975 8.504 L139.975 131.471 C139.975 136.167 136.167 139.975 131.471 139.975 L8.504 139.975 C3.807 139.975 0 136.167 0 131.471 L0 8.504 C0 3.807 3.807 0 8.504 0 Z" fill="none" stroke="#ff00ff" stroke-width="0.283"/>
+    <circle cx="108.085" cy="85.656" r="7.087" fill="none" stroke="#ff00ff" stroke-width="0.283"/>
+  </g>
+</svg>
