@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+# Flash an ELF to the board over USB, start it, then stream its logs (like
+# `probe-rs run`). Used as the cargo runner (`cargo fw-run`). Ctrl-C to stop.
+# Needs `picotool` and `defmt-print` (both in the nix dev shell), and the board
+# either running this firmware (reset interface: no BOOTSEL button) or already in
+# the ROM bootloader (first flash / recovery).
+#
+# Every flash also erases the persisted configuration (last flash sector), so a
+# new build always starts from defaults and a bad config can never survive a
+# re-flash. FW_KEEP_CONFIG=1 keeps it.
+#
+# FW_NO_LOGS=1 flashes only.
+set -uo pipefail
+
+here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+elf="${1:?usage: fw-flash <firmware.elf>}"
+
+CFG_FROM=0x101FF000   # keep in sync with app/src/flash.rs CONFIG_FLASH_OFFSET
+CFG_TO=0x10200000
+
+if [ "${FW_KEEP_CONFIG:-}" != 1 ]; then
+  # Enter the ROM bootloader (no-op if already there), then wipe the config sector.
+  erased=0
+  for attempt in 1 2 3; do
+    picotool reboot -u -f >/dev/null 2>&1 || true
+    sleep 1
+    if picotool erase -r "$CFG_FROM" "$CFG_TO"; then erased=1; break; fi
+    echo "config erase attempt $attempt failed, retrying..." >&2
+  done
+  [ "$erased" = 1 ] || { echo "could not erase config (FW_KEEP_CONFIG=1 to skip)" >&2; exit 1; }
+fi
+
+# The board re-enumerates after the reset request; picotool sometimes gives up
+# waiting for it, so retry (the second attempt finds it in the bootloader).
+ok=0
+for attempt in 1 2 3; do
+  if picotool load -u -v -x "$elf" -t elf -f; then ok=1; break; fi
+  echo "flash attempt $attempt failed, retrying..." >&2
+  sleep 1
+done
+[ "$ok" = 1 ] || { echo "flashing failed" >&2; exit 1; }
+
+[ "${FW_NO_LOGS:-}" = 1 ] && exit 0
+exec "$here/fw-logs" "$elf"

@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+# Show the board's log output (defmt over USB serial). Keeps running across
+# reboots and re-flashes: it waits for the board to reappear and reconnects.
+#
+#   scripts/fw-logs [path/to/firmware.elf] [serial-device]
+#
+# The ELF must be the exact build that is running on the board, because defmt
+# frames are decoded against its symbol table. Defaults to the release build.
+# Needs `defmt-print` (`cargo install defmt-print`).
+set -uo pipefail
+
+here="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+elf="${1:-$here/target/thumbv6m-none-eabi/release/firmware}"
+dev="${2:-}"
+
+command -v defmt-print >/dev/null || { echo "defmt-print not found: cargo install defmt-print" >&2; exit 1; }
+[ -f "$elf" ] || { echo "no firmware ELF at $elf (run: cargo fw-build)" >&2; exit 1; }
+
+find_device() {
+  [ -n "$dev" ] && { echo "$dev"; return; }
+  ls /dev/serial/by-id/*hydra_nano* 2>/dev/null | head -n1
+}
+
+echo "decoding with $elf" >&2
+while true; do
+  d="$(find_device)"
+  if [ -z "$d" ] || [ ! -e "$d" ]; then
+    sleep 0.5
+    continue
+  fi
+  echo "--- connected: $d" >&2
+  stty -F "$d" raw -echo 2>/dev/null
+  defmt-print -e "$elf" < "$d"
+  echo "--- disconnected, waiting for the board..." >&2
+  sleep 0.5
+done

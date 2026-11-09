@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: cargo-fmt
+        name: cargo fmt (check)
+        entry: bash -c 'if command -v cargo >/dev/null 2>&1; then (cd firmware && cargo fmt --check); else (cd firmware && direnv exec . cargo fmt --check); fi'
+        language: system
+        files: ^firmware/.*\.rs$
+        pass_filenames: false

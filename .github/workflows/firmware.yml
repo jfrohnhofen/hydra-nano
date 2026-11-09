@@ -1,0 +1,47 @@
+name: Firmware Tests
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'firmware/**'
+      - '.github/workflows/firmware.yml'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'firmware/**'
+      - '.github/workflows/firmware.yml'
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  test:
+    name: Format, host tests, firmware build
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: firmware
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt
+          targets: thumbv6m-none-eabi
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: firmware
+
+      - name: Format check
+        run: cargo fmt --check
+
+      - name: Host unit tests (sacn-core)
+        run: cargo test -p sacn-core
+
+      - name: Firmware type-check (thumbv6m)
+        run: cargo fw-check
+
+      - name: Firmware release build
+        run: cargo build -p firmware --release --target thumbv6m-none-eabi --bin firmware
